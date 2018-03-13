@@ -1,0 +1,6 @@
+framework module Pods_AEC_Alumni {
+  umbrella header "Pods-AEC Alumni-umbrella.h"
+
+  export *
+  module * { export * }
+}
