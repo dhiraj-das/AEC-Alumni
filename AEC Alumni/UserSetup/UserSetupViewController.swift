@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  UserSetupViewController.swift
 //  AEC Alumni
 //
 //  Created by Dhiraj Das on 3/13/18.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class UserSetupViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()

@@ -9,10 +9,12 @@
 /* Begin PBXBuildFile section */
 		3E808BFF5F8F484B5559D317 /* Pods_AEC_Alumni.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B6E6DABD81050FFBBB8A42F /* Pods_AEC_Alumni.framework */; };
 		8B6016E82057C12D00FCE586 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B6016E72057C12D00FCE586 /* AppDelegate.swift */; };
-		8B6016EA2057C12D00FCE586 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B6016E92057C12D00FCE586 /* ViewController.swift */; };
-		8B6016ED2057C12D00FCE586 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8B6016EB2057C12D00FCE586 /* Main.storyboard */; };
+		8B6016EA2057C12D00FCE586 /* UserSetupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B6016E92057C12D00FCE586 /* UserSetupViewController.swift */; };
+		8B6016ED2057C12D00FCE586 /* UserSetup.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8B6016EB2057C12D00FCE586 /* UserSetup.storyboard */; };
 		8B6016EF2057C12D00FCE586 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8B6016EE2057C12D00FCE586 /* Assets.xcassets */; };
 		8B6016F22057C12D00FCE586 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8B6016F02057C12D00FCE586 /* LaunchScreen.storyboard */; };
+		8B6016FB2057D65600FCE586 /* CircularStd-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = 8B6016FA2057D64C00FCE586 /* CircularStd-Medium.otf */; };
+		8B6017062057EFA800FCE586 /* UIView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B6017052057EFA800FCE586 /* UIView+Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,11 +22,13 @@
 		7B6E6DABD81050FFBBB8A42F /* Pods_AEC_Alumni.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AEC_Alumni.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8B6016E42057C12D00FCE586 /* AEC Alumni.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "AEC Alumni.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8B6016E72057C12D00FCE586 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		8B6016E92057C12D00FCE586 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		8B6016EC2057C12D00FCE586 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		8B6016E92057C12D00FCE586 /* UserSetupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserSetupViewController.swift; sourceTree = "<group>"; };
+		8B6016EC2057C12D00FCE586 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/UserSetup.storyboard; sourceTree = "<group>"; };
 		8B6016EE2057C12D00FCE586 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8B6016F12057C12D00FCE586 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8B6016F32057C12D00FCE586 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8B6016FA2057D64C00FCE586 /* CircularStd-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "CircularStd-Medium.otf"; sourceTree = "<group>"; };
+		8B6017052057EFA800FCE586 /* UIView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extensions.swift"; sourceTree = "<group>"; };
 		D8DDD28710F29A1FDEDC62E3 /* Pods-AEC Alumni.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AEC Alumni.release.xcconfig"; path = "Pods/Target Support Files/Pods-AEC Alumni/Pods-AEC Alumni.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -69,14 +73,56 @@
 		8B6016E62057C12D00FCE586 /* AEC Alumni */ = {
 			isa = PBXGroup;
 			children = (
+				8B6017042057EF9000FCE586 /* Common */,
+				8B6016FD2057E4F700FCE586 /* ReusableViews */,
+				8B6016FC2057D65E00FCE586 /* Resources */,
+				8B6016F92057CE2900FCE586 /* UserSetup */,
 				8B6016E72057C12D00FCE586 /* AppDelegate.swift */,
-				8B6016E92057C12D00FCE586 /* ViewController.swift */,
-				8B6016EB2057C12D00FCE586 /* Main.storyboard */,
-				8B6016EE2057C12D00FCE586 /* Assets.xcassets */,
-				8B6016F02057C12D00FCE586 /* LaunchScreen.storyboard */,
 				8B6016F32057C12D00FCE586 /* Info.plist */,
+				8B6016F02057C12D00FCE586 /* LaunchScreen.storyboard */,
 			);
 			path = "AEC Alumni";
+			sourceTree = "<group>";
+		};
+		8B6016F92057CE2900FCE586 /* UserSetup */ = {
+			isa = PBXGroup;
+			children = (
+				8B6016E92057C12D00FCE586 /* UserSetupViewController.swift */,
+				8B6016EB2057C12D00FCE586 /* UserSetup.storyboard */,
+			);
+			path = UserSetup;
+			sourceTree = "<group>";
+		};
+		8B6016FC2057D65E00FCE586 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				8B6016FA2057D64C00FCE586 /* CircularStd-Medium.otf */,
+				8B6016EE2057C12D00FCE586 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		8B6016FD2057E4F700FCE586 /* ReusableViews */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ReusableViews;
+			sourceTree = "<group>";
+		};
+		8B6017032057EF8000FCE586 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				8B6017052057EFA800FCE586 /* UIView+Extensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		8B6017042057EF9000FCE586 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				8B6017032057EF8000FCE586 /* Extensions */,
+			);
+			path = Common;
 			sourceTree = "<group>";
 		};
 		986EB8C17D8B2B36F4D92605 /* Pods */ = {
@@ -152,7 +198,8 @@
 			files = (
 				8B6016F22057C12D00FCE586 /* LaunchScreen.storyboard in Resources */,
 				8B6016EF2057C12D00FCE586 /* Assets.xcassets in Resources */,
-				8B6016ED2057C12D00FCE586 /* Main.storyboard in Resources */,
+				8B6016ED2057C12D00FCE586 /* UserSetup.storyboard in Resources */,
+				8B6016FB2057D65600FCE586 /* CircularStd-Medium.otf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -219,7 +266,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8B6016EA2057C12D00FCE586 /* ViewController.swift in Sources */,
+				8B6016EA2057C12D00FCE586 /* UserSetupViewController.swift in Sources */,
+				8B6017062057EFA800FCE586 /* UIView+Extensions.swift in Sources */,
 				8B6016E82057C12D00FCE586 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -227,12 +275,12 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		8B6016EB2057C12D00FCE586 /* Main.storyboard */ = {
+		8B6016EB2057C12D00FCE586 /* UserSetup.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				8B6016EC2057C12D00FCE586 /* Base */,
 			);
-			name = Main.storyboard;
+			name = UserSetup.storyboard;
 			sourceTree = "<group>";
 		};
 		8B6016F02057C12D00FCE586 /* LaunchScreen.storyboard */ = {
@@ -359,7 +407,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = RLNA7ZSN7E;
 				INFOPLIST_FILE = "AEC Alumni/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.dhirajdas.AEC-Alumni";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -374,7 +424,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = RLNA7ZSN7E;
 				INFOPLIST_FILE = "AEC Alumni/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.dhirajdas.AEC-Alumni";
 				PRODUCT_NAME = "$(TARGET_NAME)";
