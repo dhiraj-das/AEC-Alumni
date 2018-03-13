@@ -9,17 +9,28 @@
 import UIKit
 
 class UserSetupViewController: UIViewController {
-
+    
+    @IBOutlet var userSetupView: UserSetupView!
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        navigationController?.setNavigationBarHidden(true, animated: false)
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        userSetupView.delegate = self
     }
+}
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+extension UserSetupViewController: UserSetupViewDelegate {
+    
+    func signInTapped(sender: Any) {
+        
     }
-
-
+    
+    func createAccountTapped(sender: Any) {
+        
+    }
 }
 

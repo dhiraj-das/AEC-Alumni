@@ -15,6 +15,10 @@
 		8B6016F22057C12D00FCE586 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8B6016F02057C12D00FCE586 /* LaunchScreen.storyboard */; };
 		8B6016FB2057D65600FCE586 /* CircularStd-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = 8B6016FA2057D64C00FCE586 /* CircularStd-Medium.otf */; };
 		8B6017062057EFA800FCE586 /* UIView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B6017052057EFA800FCE586 /* UIView+Extensions.swift */; };
+		8B60170E20583CC600FCE586 /* RoundedButton.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8B60170C20583CC500FCE586 /* RoundedButton.xib */; };
+		8B60170F20583CC600FCE586 /* RoundedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B60170D20583CC500FCE586 /* RoundedButton.swift */; };
+		8B60171120583D4000FCE586 /* UIColor+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B60171020583D4000FCE586 /* UIColor+Extensions.swift */; };
+		8B601713205843B500FCE586 /* UserSetupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B601712205843B500FCE586 /* UserSetupView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +33,10 @@
 		8B6016F32057C12D00FCE586 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8B6016FA2057D64C00FCE586 /* CircularStd-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "CircularStd-Medium.otf"; sourceTree = "<group>"; };
 		8B6017052057EFA800FCE586 /* UIView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extensions.swift"; sourceTree = "<group>"; };
+		8B60170C20583CC500FCE586 /* RoundedButton.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RoundedButton.xib; sourceTree = "<group>"; };
+		8B60170D20583CC500FCE586 /* RoundedButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundedButton.swift; sourceTree = "<group>"; };
+		8B60171020583D4000FCE586 /* UIColor+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extensions.swift"; sourceTree = "<group>"; };
+		8B601712205843B500FCE586 /* UserSetupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserSetupView.swift; sourceTree = "<group>"; };
 		D8DDD28710F29A1FDEDC62E3 /* Pods-AEC Alumni.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AEC Alumni.release.xcconfig"; path = "Pods/Target Support Files/Pods-AEC Alumni/Pods-AEC Alumni.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -88,6 +96,7 @@
 			isa = PBXGroup;
 			children = (
 				8B6016E92057C12D00FCE586 /* UserSetupViewController.swift */,
+				8B601712205843B500FCE586 /* UserSetupView.swift */,
 				8B6016EB2057C12D00FCE586 /* UserSetup.storyboard */,
 			);
 			path = UserSetup;
@@ -105,6 +114,7 @@
 		8B6016FD2057E4F700FCE586 /* ReusableViews */ = {
 			isa = PBXGroup;
 			children = (
+				8B60170B20583CB200FCE586 /* RoundedButton */,
 			);
 			path = ReusableViews;
 			sourceTree = "<group>";
@@ -113,6 +123,7 @@
 			isa = PBXGroup;
 			children = (
 				8B6017052057EFA800FCE586 /* UIView+Extensions.swift */,
+				8B60171020583D4000FCE586 /* UIColor+Extensions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -123,6 +134,15 @@
 				8B6017032057EF8000FCE586 /* Extensions */,
 			);
 			path = Common;
+			sourceTree = "<group>";
+		};
+		8B60170B20583CB200FCE586 /* RoundedButton */ = {
+			isa = PBXGroup;
+			children = (
+				8B60170D20583CC500FCE586 /* RoundedButton.swift */,
+				8B60170C20583CC500FCE586 /* RoundedButton.xib */,
+			);
+			path = RoundedButton;
 			sourceTree = "<group>";
 		};
 		986EB8C17D8B2B36F4D92605 /* Pods */ = {
@@ -197,6 +217,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8B6016F22057C12D00FCE586 /* LaunchScreen.storyboard in Resources */,
+				8B60170E20583CC600FCE586 /* RoundedButton.xib in Resources */,
 				8B6016EF2057C12D00FCE586 /* Assets.xcassets in Resources */,
 				8B6016ED2057C12D00FCE586 /* UserSetup.storyboard in Resources */,
 				8B6016FB2057D65600FCE586 /* CircularStd-Medium.otf in Resources */,
@@ -267,8 +288,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				8B6016EA2057C12D00FCE586 /* UserSetupViewController.swift in Sources */,
+				8B60171120583D4000FCE586 /* UIColor+Extensions.swift in Sources */,
+				8B60170F20583CC600FCE586 /* RoundedButton.swift in Sources */,
 				8B6017062057EFA800FCE586 /* UIView+Extensions.swift in Sources */,
 				8B6016E82057C12D00FCE586 /* AppDelegate.swift in Sources */,
+				8B601713205843B500FCE586 /* UserSetupView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
