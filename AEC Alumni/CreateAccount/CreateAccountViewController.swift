@@ -10,10 +10,11 @@ import UIKit
 
 class CreateAccountViewController: BaseViewController {
     
+    @IBOutlet var createAccountView: CreateAccountView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
     }
-
     
 }
