@@ -30,7 +30,10 @@ extension UserSetupViewController: UserSetupViewDelegate {
     }
     
     func createAccountTapped(sender: Any) {
-        
+        let storyboard = UIStoryboard(name: Constants.Storyboards.createAccount,
+                                      bundle: nil)
+        guard let viewController = storyboard.instantiateInitialViewController() as? CreateAccountViewController else { return }
+        navigationController?.pushViewController(viewController, animated: true)
     }
 }
 
